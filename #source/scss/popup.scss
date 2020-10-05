@@ -27,8 +27,10 @@
     border-radius: 3px;
     z-index: 9999;
     padding: 20px;
-    max-width: 460px;
+    max-width: 750px;
     width: 100%;
+    max-height: 100%;
+    overflow: auto;
 }
 
 .popup__wrapp-galery {
@@ -78,11 +80,81 @@
     display: block;
     width: 20px;
     height: 20px;
-    top: -30px;
-    right: -30px;
+    top: 10px;
+    right: 10px;
     border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
     cursor: pointer;
     background: #fff url(../img/svg/close.svg) 50% 50%/ 65% no-repeat;
+}
+
+.popup__close:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-input-popup {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.popup-input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid #c1af9c;
+    color: #c1af9c;
+    font-size: 16px;
+}
+
+.popup-input::placeholder {
+    color: #c1af9c;
+    font-size: 16px;
+}
+
+.main-popup__title {
+    padding-bottom: 30px;
+}
+
+.popup-textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid #c1af9c;
+    resize: none;
+    color: #c1af9c;
+    font-size: 16px;
+}
+
+.popup-textarea::placeholder {
+    color: #c1af9c;
+    font-size: 16px;
+}
+
+.popup .wrapper-logo {
+    padding: 20px 0 40px 0;
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-textarea-popup {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.container-main {
+    padding: 0 70px;
+}
+
+.wrapper-popup-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.popup-form {
+    width: 100%;
 }

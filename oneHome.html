@@ -7,6 +7,7 @@
 <head>
     <title>Главная</title>
     <!-- Подключение CSS -->
+    <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -82,9 +83,11 @@
             </div>
         </div>
         <div class="header__item">
-            <div class="wrapper-logo">
-                <img src="img/icons/logo.png" alt="">
-            </div>
+            <a href="#">
+                <div class="wrapper-logo">
+                    <img src="img/icons/logo.png" alt="">
+                </div>
+            </a>
         </div>
         <div class="header__item">
             <div class="icons__item mob-geo">
@@ -207,22 +210,30 @@
                             <div class="sliderbig">
                                 <div class="sliderbig__item">
                                     <div class="wrapper-big">
-                                        <img src="img/slider/oneBig1.png" alt="">
+                                        <a data-fancybox="gallery" href="img/slider/oneBig1.png">
+                                            <img src="img/slider/oneBig1.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="sliderbig__item">
                                     <div class="wrapper-big">
-                                        <img src="img/slider/oneBig1.png" alt="">
+                                        <a data-fancybox="gallery" href="img/slider/oneBig1.png">
+                                            <img src="img/slider/oneBig1.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="sliderbig__item">
                                     <div class="wrapper-big">
-                                        <img src="img/slider/oneBig1.png" alt="">
+                                        <a data-fancybox="gallery" href="img/slider/oneBig1.png">
+                                            <img src="img/slider/oneBig1.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="sliderbig__item">
                                     <div class="wrapper-big">
-                                        <img src="img/slider/oneBig1.png" alt="">
+                                        <a data-fancybox="gallery" href="img/slider/oneBig1.png">
+                                            <img src="img/slider/oneBig1.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="wrapper-btn-green">
-                                <button class="consult-btn btn-green">Замовити консультацію</button>
+                                <a href="popup-99" class="consult-btn btn-green js-btn-popup">Замовити консультацію</a>
                             </div>
                         </div>
                     </div>
@@ -428,9 +439,11 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-main">
-            <div class="wrapper-logo">
-                <img src="img/icons/logo.png" alt="">
-            </div>
+            <a href="#" class="footer-z">
+                <div class="wrapper-logo">
+                    <img src="img/icons/logo.png" alt="">
+                </div>
+            </a>
             <div class="footer-content">
                 <div class="footer__item">
                     <div class="wrapper-item-block">
@@ -577,15 +590,34 @@
     </div>
   </div>
 
-<!-- <div class="popup js-popup" data-id-popup="popup-1">
+<div class="popup js-popup" data-id-popup="popup-99">
   <div class="popup__opas"></div>
   <div class="popup__wrapp js-popup__wrapp">
     <span class="popup__close js-popup__close"></span>
-    <div class="popup-container">
-      <h2>Попап</h2>
+    <div class="popup-container container-main">
+        <a href="#">
+          <div class="wrapper-logo">
+              <img src="img/icons/logo.png" alt="">
+          </div>
+        </a>
+        <h2 class="content__title main-popup__title">Замовити КОнсультацію</h2>
+        <form action="" class="popup-form">
+          <div class="wrapper-input-popup">
+            <input type="text" class="popup-input" placeholder="Ім’я">
+          </div>
+          <div class="wrapper-input-popup">
+            <input type="text" class="popup-input" placeholder="Телефон">
+          </div>
+          <div class="wrapper-textarea-popup">
+            <textarea class="popup-textarea" cols="30" rows="6" placeholder="Коментар"></textarea>
+          </div>
+          <div class="wrapper-btn-green wrapper-popup-btn">
+            <button class="consult-btn btn-green">Замовити консультацію</button>
+          </div>
+        </form>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- кнопка прокрутки вверх -->
 <div class="scroll-up js-scroll-up">
@@ -597,6 +629,7 @@
 <!-- Подключеине скриптов -->
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/slick.min.js"></script>
+<script src="libs/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

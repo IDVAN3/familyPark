@@ -1,10 +1,7 @@
 // <МЕДИАЗАПРОСЫ>-----------------------------------------------
 @media (max-width: 1443px) {
-    .icons__social {
-        padding: 0 10px;
-    }
     .icons__item {
-        padding: 0 10px;
+        padding: 0 9px;
     }
 }
 
@@ -91,6 +88,12 @@
 }
 
 @media (max-width: 882px) {
+    .one-content-house {
+        padding: 85px 0 0 20px;
+    }
+    .btn-green {
+        padding: 10px 20px;
+    }
     .action-row {
         flex-direction: column;
         &__item {
@@ -103,6 +106,30 @@
 }
 
 @media (max-width: 768px) {
+    body.lock1 {
+        overflow: hidden;
+    }
+    .btn-green {
+        padding: 10px 30px;
+    }
+    .wrapper-textarea-popup {
+        margin-bottom: 30px;
+    }
+    .popup .wrapper-logo {
+        padding: 5px 0 20px 0;
+    }
+    .main-popup__title {
+        padding-bottom: 20px;
+    }
+    .container-main {
+        padding: 0;
+    }
+    .wrapper-slider-btn {
+        opacity: 1;
+    }
+    .house-slider__item {
+        border: 2px solid #9f8263;
+    }
     .plan-text {
         order: 1;
     }
@@ -253,9 +280,7 @@
         padding-top: 20px;
         margin-bottom: 20px;
     }
-    body.lock {
-        overflow: hidden;
-    }
+    
     .next-header-bg {
         padding-top: 105px;
         padding-bottom: 15px;
@@ -310,11 +335,12 @@
     .geolocation {
         flex-direction: column;
     }
-    .geolocation__item {
-        flex: 0 0 100%;
+    .g-item__content {
+        width: 100%;
     }
     .height-map {
         height: 211px;
+        width: 100%;
     }
     .wrapper-map {
         width: 100%;
@@ -331,6 +357,21 @@
     .title-one-house.mob {
         padding-bottom: 15px;
     }   
+}
+
+@media (max-width: 600px) {
+    .wrapper-house-img {
+        height: auto;
+    }
+    .infrastructure__title {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    .main-popup__title {
+        font-size: 24px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 440px) {

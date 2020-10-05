@@ -220,13 +220,16 @@ textarea {
 .geolocation {
     display: flex;
     &__item {
-        flex: 0 0 50%;
         background-color: #222121;
     }
 }
 
 .g-item__content {
     padding: 60px 0 185px 0;
+    width: 45.8%;
+}
+.height-map {
+    width: 54.2%;
 }
 
 .geo-link-top {
@@ -243,7 +246,7 @@ textarea {
 }
 
 .consult-btn {
-    padding: 15px 30px;
+    padding: 10px 30px;
     border: 2px solid #c1af9c;
     border-radius: 5px;
     background: transparent;
@@ -291,7 +294,7 @@ textarea {
 }
 
 .action-btn {
-    padding: 15px 75px;
+    padding: 10px 75px;
     color: #9e8163;
     border: 2px solid #c1af9c;
 }
@@ -343,9 +346,11 @@ textarea {
 .infrastructure__item {
     padding: 0 15px 15px 15px;
     flex: 0 0 50%;
-    img {
-        width: 100%;
-    }
+    a {
+        img {
+            width: 100%;
+        }
+}
 }
 
 .infrastructure__title {
@@ -419,6 +424,7 @@ textarea {
     overflow: hidden;
 }
 
+
 .house-slider .slick-arrow {
     position: absolute;
     top: 50%;
@@ -486,6 +492,7 @@ textarea {
     border: 2px solid #9f8263;
 }
 
+
 //page action-one
 
 .action-one {
@@ -527,6 +534,10 @@ textarea {
 .action__title {
     max-width: 95%;
     padding-bottom: 40px;
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 .select{
@@ -733,7 +744,7 @@ textarea {
   .slider-product {
     min-width: 0;
     max-width: 625px;
-    // margin: 0 -7px;
+    
     position: relative;
 
     display: flex;
@@ -766,9 +777,29 @@ textarea {
     background-size: cover;
 }
 
+.wrapper-product {
+    position: relative;
+}
+
+.wrapper-product:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.slider-product .slick-current .wrapper-product:before {
+    background: rgba(0, 0, 0, 0);
+}
+
 .product__item {
     margin: 0 7px;
     max-width: 195px;
+    text-align: center;
     img {
         width: 100%;
     }
@@ -852,9 +883,24 @@ textarea {
 .pc-v {
     display: block;
 }
+
 .mob-v {
     display: none;
 }
+
+.wrapper-house-img {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 186px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 
 // </ОСНОВНОЙ БЛОК>----------------------------------------------------------
 // <404>---------------------------------------------------------------------

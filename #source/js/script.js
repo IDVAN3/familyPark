@@ -32,10 +32,12 @@ $(document).ready(function() {
 
     function openPopup(id) {
         $(".js-popup[data-id-popup='" + id + "']").fadeIn(300);
+        $('body').addClass('lock');
     }
 
     function close_popup() {
         $('.js-popup').fadeOut(300);
+        $('body').removeClass('lock');
     }
 
     $('.js-popup__close').click(close_popup);
@@ -86,7 +88,7 @@ $(document).ready(function() {
     let heightHeader = $(".header").height();
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu').toggleClass('active');
-        $('body').toggleClass('lock');
+        $('body').toggleClass('lock1');
         $('.header__menu.active').css('top', heightHeader);
     });
 
@@ -128,6 +130,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         asNavFor: ".sliderbig",
         focusOnSelect: true,
+        centerMode: true,
+        centerPadding: 0
     });
 
     //end slider
