@@ -64,6 +64,26 @@ $(document).ready(function() {
         $(this).addClass('active');
     })
 
+    $('.floor-btn').click(function (event) {
+        event.preventDefault();
+        event = $(this).closest('.wrapper-btns').find('.floor-btn.active');
+        event.removeClass('active');
+        $(this).addClass('active');
+        let idFloor = $(this).attr('data-id-floor');
+
+        $('.plan-img__item').each(function(e1, e) {
+            e = $(this).closest('.plan-img').find('.plan-img__item.active');
+            e1 = $(this).closest('.wrapper-info').find('.plan-img__item.active');
+            let idItem = $(this).attr('data-id-item');
+            
+            if (idFloor == idItem) {
+                e.removeClass('active');
+                e1.removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    });
+
     let heightHeader = $(".header").height();
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu').toggleClass('active');
@@ -154,6 +174,7 @@ $(document).ready(function() {
     });
 
     select();
+    
 });
 /*кнопка прокрутки вверх*/
 

@@ -260,6 +260,12 @@ textarea {
     border: 2px solid #9da34d;
 }
 
+.floor-btn {
+    color: #9e8163;
+    border: 2px solid #c1af9c;
+    padding: 15px 75px;
+}
+
 .consult-btn:hover {
     background-color: #9da34d;
     border: 2px solid #9da34d;
@@ -269,6 +275,15 @@ textarea {
     border: 2px solid #c1af9c;
     background-color: #fff;
     color: #c1af9c;
+}
+
+.floor-btn:hover {
+    color: #ffffff;
+}
+.floor-btn.active {
+    color: #ffffff;
+    background-color: #9da34d;
+    border: 2px solid #9da34d;
 }
 
 .wrapper-action-btn {
@@ -773,6 +788,72 @@ textarea {
         color: #333333;
     }
     
+}
+
+.section-plan {
+    padding: 50px 0 110px 0;
+    background-color: #f6f6f6;
+}
+
+.wrapper-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7.5px;
+    // margin-top: 25px;
+}
+
+.wrapper-floor {
+    margin: 7.5px;
+}
+
+.plan-content {
+    display: flex;
+}
+
+.plan-img__item {
+    display: none;
+    max-width: 586px;
+    img {
+        width: 100%;
+    }
+}
+
+.plan-img__item.active {
+    display: block;
+}
+
+.wrapper-info {
+    max-width: 420px;
+}
+
+.about-info {
+    padding: 50px 0 60px 0;
+    .info-text {
+        color: #333333;
+    }
+}
+
+.plan-text {
+    padding-top: 25px;
+}
+
+.wrapper-mob {
+    display: none;
+}
+
+.content__title.mob {
+    font-size: 24px;
+}
+
+.title-one-house {
+    padding-bottom: 15px;
+}
+
+.pc-v {
+    display: block;
+}
+.mob-v {
+    display: none;
 }
 
 // </ОСНОВНОЙ БЛОК>----------------------------------------------------------
