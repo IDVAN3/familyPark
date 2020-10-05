@@ -1552,12 +1552,6 @@ body.lock {
   padding: 20px 0 40px 0;
 }
 
-.popup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .wrapper-textarea-popup {
   margin-bottom: 50px;
   width: 100%;
