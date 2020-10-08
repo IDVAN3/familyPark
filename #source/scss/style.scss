@@ -29,6 +29,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 // </BODY>--------------------------------------------------------------------
 // <ОБОЛОЧКА>----------------------------------------------------------------
 .wrapper {
@@ -409,7 +413,11 @@ textarea {
         img {
             width: 100%;
         }
+    }
 }
+
+.wrapper-infrastructure__title {
+    margin: 14px 0;
 }
 
 .infrastructure__title {

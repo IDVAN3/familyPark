@@ -100,6 +100,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -793,6 +797,10 @@ textarea.error {
 }
 .infrastructure__item a img {
   width: 100%;
+}
+
+.wrapper-infrastructure__title {
+  margin: 14px 0;
 }
 
 .infrastructure__title {
@@ -1944,9 +1952,12 @@ body.lock {
   width: 100%;
 }
 
+.shadow-wrap {
+  box-shadow: 10px 17px 21px 3px rgba(42, 42, 35, 0.24);
+}
+
 .container-main {
   padding: 0 70px;
-  box-shadow: 10px 17px 21px 3px rgba(42, 42, 35, 0.24);
 }
 
 .wrapper-popup-btn {
@@ -2627,6 +2638,10 @@ body.lock {
 @media (max-width: 600px) {
   .wrapper-house-img {
     height: auto;
+  }
+
+  .wrapper-infrastructure__title {
+    margin: 5px 0;
   }
 
   .infrastructure__title {

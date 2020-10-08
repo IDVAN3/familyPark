@@ -86,7 +86,7 @@ $(document).ready(function() {
     });
 
     $('.btn-inf').click(function (event, event2) {
-        event.preventDefault();
+        // event.preventDefault();
         event = $(this).closest('.wrapper-buttons').find('.btn-inf.active');
         event.removeClass('active');
         $(this).addClass('active');
@@ -138,6 +138,8 @@ $(document).ready(function() {
 
 
     let heightHeader = $(".header").height();
+    $('.anchor').css('height', heightHeader);
+    $('.anchor').css('margin-top', -heightHeader);
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu').toggleClass('active');
         $('body').toggleClass('lock1');

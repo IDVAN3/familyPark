@@ -139,9 +139,12 @@
     width: 100%;
 }
 
+.shadow-wrap {
+    box-shadow: 10px 17px 21px 3px rgba(42, 42, 35, 0.24);
+}
+
 .container-main {
     padding: 0 70px;
-    box-shadow: 10px 17px 21px 3px rgba(42, 42, 35, 0.24);
 }
 
 .wrapper-popup-btn {
