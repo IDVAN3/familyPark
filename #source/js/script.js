@@ -85,6 +85,58 @@ $(document).ready(function() {
         });
     });
 
+    $('.btn-inf').click(function (event, event2) {
+        event.preventDefault();
+        event = $(this).closest('.wrapper-buttons').find('.btn-inf.active');
+        event.removeClass('active');
+        $(this).addClass('active');
+        let idFloor = $(this).attr('data-id-btn-inf');
+
+        $('.plan-img__item').each(function(e1, e) {
+            e = $(this).closest('.plan-img').find('.plan-img__item.active');
+            e1 = $(this).closest('.wrapper-inf-text').find('.plan-img__item.active');
+            let idItem = $(this).attr('data-id-inf');
+            
+            if (idFloor == idItem) {
+                e.removeClass('active');
+                e1.removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+        let idBtnGenplan = $(this).attr('data-id-genplan');
+
+        $('.wrapper-genplan-img').each(function(e1, e) {
+            e = $(this).closest('.genplan__left').find('.wrapper-genplan-img.active');
+            e1 = $(this).closest('.svg-content').find('.wrapper-genplan-img.active');
+            let idGEnplan = $(this).attr('data-genplan-content');
+            
+            if (idBtnGenplan == idGEnplan) {
+                e.removeClass('active');
+                e1.removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+        event2 = $(this).closest('.wrappers-genplan-btn').find('.btn-inf.active');
+        event2.removeClass('active');
+        $(this).addClass('active');
+
+        $('.wrapper-gen-svg').each(function(e1, e) {
+            e = $(this).closest('.wrappers-genplan-btn').find('.wrapper-genplan-img.active');
+            e1 = $(this).closest('.all-svg').find('.wrapper-gen-svg.active');
+            let idGEnplan = $(this).attr('data-genplan-content');
+            
+            if (idBtnGenplan == idGEnplan) {
+                e.removeClass('active');
+                e1.removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    });
+
+
+
     let heightHeader = $(".header").height();
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu').toggleClass('active');
